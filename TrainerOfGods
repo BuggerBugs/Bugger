@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+int main()
+{
+  char answer[40];
+  int counter=0;
+  strcpy(answer,"no");
+  while(strcasecmp(answer,"yes"))
+  {
+    printf("Are you a noob in league?\n");
+    scanf("%s",&answer);
+    if(!strcasecmp(answer,"no"))
+    {
+      printf("HAHAHAHA DELUSIONAL LOLOL I GIVE U CHANCE I'll ask AGAIN!\n");
+      counter+=1;
+    }
+    else
+    {
+      printf("Yeah i alr knew that lol its okay...\n");
+      if(counter)
+      {
+        printf("Not sure why you were so delusional to refute that %d times though!\n",counter);
+      }
+    
+    }
+    fflush(stdin);
+  }
+
+  printf("Since you are such a noob, let me help you out and give you some PRO GUIDES.\n");
+  char answerchamp[100];
+  printf("Which champ do you wanna be un-garbage at? : \n");
+  char godstring[500];
+   while(1)
+  {
+     scanf("%s",answerchamp);
+     if(!strcmp(answerchamp,"#"))
+     {
+      break;
+     }
+     printf("OK BRO HERE IS YOUR GUIDE FOR %s. Which other champ do you wanna be un-garbage at? (type # if you are done un-garbaging yourself)\n",answerchamp);
+
+  strcpy(godstring,"start C:\\\"Program Files (x86)\"\\Microsoft\\Edge\\Application\\msedge.exe  https://lolalytics.com/lol/");
+  strcat(godstring,answerchamp);
+  strcat(godstring,"/build/");
+  system(godstring);
+  }
+  
+  printf("Congrats! You have successfully un-garbaged yourself. To celebrate, I would like to give you an EXCLUSIVE OFFER to my FREE CHALLENGER training course.\n Press any key to unlock it!\n Enjoy and see you in challenger very very soon!\n");
+  system("pause");
+  system("start C:\\\"Program Files (x86)\"\\Microsoft\\Edge\\Application\\msedge.exe  https://puppies-are-the-cutest.brandonnms.repl.co/");
+  
+  return 0;
+
+
+}
